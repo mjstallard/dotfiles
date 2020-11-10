@@ -40,10 +40,6 @@
     ss = show --stat
     ssp = show --stat -p
     st = status
-[user]
-    name = Chavez
-    email = matthew@el-chavez.me
-    signingkey = C810C27E
 [push]
     default = upstream
 [pull]
@@ -52,11 +48,7 @@
 [rebase]
     autoSquash = true
     autoStash = true
-[commit]
-    gpgsign = true
 [gc]
     pruneExpire = 12 hours ago
 [merge]
     tool = opendiff
-[url "git@github.com:"]
-	insteadOf = https://github.com/
