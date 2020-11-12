@@ -18,6 +18,7 @@
     editor="vim -f"
     excludesfile=~/.gitignore
     commentChar = %
+    pager = delta --dark --highlight-removed --theme DarkNeon --keep-plus-minus-markers --tabs 0
 [alias]
     br = branch -vv
     ci = commit
@@ -52,3 +53,5 @@
     pruneExpire = 12 hours ago
 [merge]
     tool = opendiff
+[interactive]
+    diffFilter = delta --dark --highlight-removed --theme DarkNeon --keep-plus-minus-markers --tabs 0 --commit-style plain --file-style plain --hunk-style plain
