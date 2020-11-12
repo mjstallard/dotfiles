@@ -141,6 +141,26 @@ alias sniff "sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump "sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 alias urlencode 'python -c "import urllib.parse; import sys; print(urllib.parse.quote(sys.argv[1], safe=\"\"));"'
 
+# Git
+#
+alias canada="git commit --amend --reset-author --no-edit"
+alias gc="git commit"
+alias gcar="git commit --amend --reset-author"
+alias glog="git log"
+alias gst="git status"
+
+
+# Geometer project scripts
+alias da="direnv allow"
+alias dr="bin/dev/doctor"
+alias shipit="bin/dev/shipit"
+alias t="bin/dev/test"
+alias u="bin/dev/update"
+
+# Overrides
+#
+alias cat=bat
+alias ping=prettyping
 #
 # Utility functions
 #
