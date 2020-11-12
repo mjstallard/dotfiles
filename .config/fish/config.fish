@@ -37,6 +37,10 @@ set -gx ERL_AFLAGS -kernel shell_history enabled
 ### Editor ###
 set -x EDITOR vim -f
 
+### Man ###
+
+set -x MANPAGER 'sh -c "col -bx | bat -l man -p"'
+
 ### Git ###
 set -x GIT_TERMINAL_PROMPT 1
 
