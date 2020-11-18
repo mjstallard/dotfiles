@@ -18,7 +18,11 @@
     editor="vim -f"
     excludesfile=~/.gitignore
     commentChar = %
-    pager = delta --dark --highlight-removed --theme DarkNeon --keep-plus-minus-markers --tabs 0
+    pager = delta --dark --highlight-removed --theme "Monokai Extended Bright" --keep-plus-minus-markers --tabs 0
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+  colorMoved = default
 [alias]
     br = branch -vv
     ci = commit
@@ -52,6 +56,6 @@
 [gc]
     pruneExpire = 12 hours ago
 [merge]
-    tool = opendiff
+  tool = opendiff
 [interactive]
-    diffFilter = delta --dark --highlight-removed --theme DarkNeon --keep-plus-minus-markers --tabs 0 --commit-style plain --file-style plain --hunk-style plain
+ diffFilter = delta --dark --theme "Monokai Extended Bright" --color-only --tabs 0 --keep-plus-minus-markers --file-decoration-style=omit
